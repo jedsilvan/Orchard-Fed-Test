@@ -1,0 +1,151 @@
+$danger: #cd1430;
+$gray: #bfc1c1;
+
+@font-face {
+  font-family: light;
+  src: url("../assets/OpenSans/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: regular;
+  src: url("../assets/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: medium;
+  src: url("../assets/OpenSans/OpenSans-Medium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+body {
+  background: #0e1414;
+  padding: 50px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.img-modal {
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+#section1 {
+  h2 {
+    font-family: light;
+    font-size: 26px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+    width: fit-content;
+  }
+
+  p {
+    font-family: light;
+    font-weight: normal;
+    color: $gray;
+    line-height: 28px;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  span {
+    font-family: light;
+    font-weight: normal;
+    color: $danger;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-family: medium;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+#section2 {
+  margin-top: 50px;
+
+  h1 {
+    font-family: light;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .item {
+    margin-bottom: 50px;
+
+    img {
+      border-bottom: 5px solid $danger;
+      margin-bottom: 25px;
+    }
+
+    label {
+      text-transform: uppercase;
+      font-family: medium;
+      font-weight: 400;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: $gray;
+      font-family: light;
+      font-weight: normal;
+      color: $gray;
+      margin-bottom: 30px;
+      line-height: 28px;
+    }
+
+    a {
+      color: #fff;
+      font-family: medium;
+      font-size: 18px;
+      font-weight: 400;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+      width: fit-content;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 190px 0;
+  }
+
+  #section2 {
+    margin-top: 190px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 768px) {
+  img#first {
+    margin-bottom: 18px;
+  }
+}
